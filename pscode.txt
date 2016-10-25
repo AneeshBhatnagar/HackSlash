@@ -1,0 +1,26 @@
+FILE : init.php
+Initialize session variables :
+	TeamName from POST
+	School from POST
+	Points = 0
+	CurrentLevel = 0
+	PassList = arbitrary array of passwords
+	
+FILE : level.php
+If CurrentLevel is 0
+	increment it to 1
+	Load CurrentLevel
+Else if exists Password in POST
+	if Password equals PassList[CurrentLevel]
+		increment Points by 10
+		increment CurrentLevel
+		load CurrentLevel
+	else
+		print "Invalid password."
+		load CurrentLevel
+
+
+
+FILE : hint.php
+decrement Points by 5
+Load hint for CurrentLevel

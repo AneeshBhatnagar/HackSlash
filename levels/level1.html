@@ -1,0 +1,7 @@
+<script language="JavaScript" src="levels/level1.js">
+</script>
+<h1>Level 1</h1>
+<p>Insecure Inc. has created a login page which validates usernames and passwords using an external JavaScript file.</p>
+<form action = "level.php" method = "POST" onSubmit = "checkPassword(document.forms[0].elements[0].value)">
+Enter password : <input type = "password" name = "Password"><input type = "button" onClick="checkPassword(document.forms[0].elements[0].value)" value = "Submit">
+</form>
